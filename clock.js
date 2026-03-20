@@ -12,7 +12,7 @@ window.onload = function () {
     secondHand.style.transform = `rotate(${secondDeg}deg)`;
 
     const minute = today.getMinutes();
-    const minuteDeg = (minute / 60) * 360 + (second / 60) * 6; 
+    const minuteDeg = (minute / 60) * 360 + (second / 60) * 6;
     minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
 
     const hour = today.getHours();
