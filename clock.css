@@ -1,10 +1,9 @@
 body {
-  background-color: #fff;
   padding: 0;
   margin: 0;
 }
 
-/* 👉 Light/Dark theme styles */
+/* Light/Dark theme */
 body.light {
   background-color: #fff;
   color: #000;
@@ -75,21 +74,14 @@ body.dark {
   position: absolute;
   top: 45%;
   left: 10%;
-  border: 1px solid #fff8dc;
   background-color: #fff;
   padding: 5px;
-  display: block;
-  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  min-width: 70px;
-  height: 15px;
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.time small {
-  color: red;
-}
-
-/* 👉 Date display box */
 .date {
   position: absolute;
   bottom: -40px;
@@ -98,11 +90,9 @@ body.dark {
   background: #fff;
   padding: 5px 10px;
   border-radius: 5px;
-  box-shadow: inset 0px 2px 5px rgba(0,0,0,0.4);
   font-size: 14px;
 }
 
-/* 👉 Toggle button style */
 #toggleTheme {
   display: block;
   margin: 20px auto;
