@@ -3,10 +3,10 @@ window.onload = function () {
   const minuteHand = document.querySelector(".minuteHand");
   const secondHand = document.querySelector(".secondHand");
   const time = document.querySelector(".time");
-  const dateDiv = document.querySelector(".date"); // date box
-  const toggleBtn = document.getElementById("toggleTheme"); // theme button
+  const dateDiv = document.querySelector(".date");
+  const toggleBtn = document.getElementById("toggleTheme");
 
-  // 👉 Tamil slang time definition
+  // Tamil slang time definition
   function getTamilSlang(hour, minute) {
     if (hour >= 0 && hour < 6) return `Rathiri ${hour}:${minute} da machii`;
     if (hour >= 6 && hour < 12) return `Kaalai ${hour}:${minute} da machii`;
@@ -29,17 +29,17 @@ window.onload = function () {
     const hourDeg = (hour / 12) * 360 + (minute / 60) * 30;
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
 
-    // 👉 Tamil slang digital time
+    // Tamil slang digital time
     time.innerHTML = `<span>${getTamilSlang(hour, minute)}</span>`;
 
-    // 👉 Date display
+    // Date display
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     dateDiv.innerHTML = today.toLocaleDateString('ta-IN', options);
   }
 
   setInterval(setDate, 1000);
 
-  // 👉 Dark/Light mode toggle
+  // Dark/Light mode toggle
   document.body.classList.add("light"); // default theme
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
