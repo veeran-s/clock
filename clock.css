@@ -4,16 +4,6 @@ body {
   margin: 0;
 }
 
-/* 👉 Light/Dark theme styles */
-body.light {
-  background-color: #fff;
-  color: #000;
-}
-body.dark {
-  background-color: #222;
-  color: #fff;
-}
-
 .clock {
   width: 300px;
   height: 300px;
@@ -87,33 +77,4 @@ body.dark {
 
 .time small {
   color: red;
-}
-
-/* 👉 Date display box */
-.date {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: inset 0px 2px 5px rgba(0,0,0,0.4);
-  font-size: 14px;
-}
-
-/* 👉 Toggle button style */
-#toggleTheme {
-  display: block;
-  margin: 20px auto;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  background: #ff8513;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-}
-#toggleTheme:hover {
-  background: #e67300;
 }
